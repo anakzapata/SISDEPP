@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Draft//EN"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Error 500--Internal Server Error</title>
+</head>
+<body bgcolor="white">
+<font face="Helvetica"><br clear="all" />
+<table border="0" cellspacing="5"><tbody><tr><td><br clear="all" />
+<font face="Helvetica" color="black" size="3"><h2>Error 500--Internal Server Error</h2>
+</font></td></tr>
+</tbody></table>
+<table border="0" width="100%" cellpadding="10"><tbody><tr><td valign="top" width="100%" bgcolor="white"><font face="Courier New"><pre>java.lang.NullPointerException
+	at java.io.FilterInputStream.markSupported(FilterInputStream.java:243)
+	at weblogic.descriptor.DescriptorCache.computeCRC(DescriptorCache.java:94)
+	at weblogic.descriptor.DescriptorCache.parseXML(DescriptorCache.java:396)
+	at weblogic.servlet.internal.TldCacheHelper.parseTagLibraries(TldCacheHelper.java:64)
+	at weblogic.servlet.internal.War.getWebTldInfo(War.java:510)
+	at weblogic.servlet.internal.War.getTagClasses(War.java:483)
+	at weblogic.servlet.internal.War.getTagListeners(War.java:455)
+	at weblogic.servlet.internal.EventsManager.registerEventListeners(EventsManager.java:128)
+	at weblogic.servlet.internal.EventsManager.registerEventListeners(EventsManager.java:93)
+	at weblogic.servlet.internal.WebAppServletContext.reloadServletClassLoader(WebAppServletContext.java:2824)
+	at weblogic.servlet.internal.FilterWrapper.reloadFilter(FilterWrapper.java:149)
+	at weblogic.servlet.internal.FilterWrapper.checkForReload(FilterWrapper.java:194)
+	at weblogic.servlet.internal.FilterWrapper.getFilter(FilterWrapper.java:100)
+	at weblogic.servlet.internal.FilterChainImpl.add(FilterChainImpl.java:47)
+	at weblogic.servlet.internal.FilterManager.getFilterChain(FilterManager.java:281)
+	at weblogic.servlet.internal.WebAppServletContext.getFilterChain(WebAppServletContext.java:3359)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3434)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3402)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+	at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:57)
+	at weblogic.servlet.internal.WebAppServletContext.doSecuredExecute(WebAppServletContext.java:2285)
+	at weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2201)
+	at weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2179)
+	at weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1572)
+	at weblogic.servlet.provider.ContainerSupportProviderImpl$WlsRequestExecutor.run(ContainerSupportProviderImpl.java:255)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:311)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:263)
+</pre></font></td></tr>
+</tbody></table>
+
+
+
+</font></body></html>

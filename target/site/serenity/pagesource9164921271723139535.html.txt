@@ -1,0 +1,143 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body topmargin="0" leftmargin="0"><html:html>
+  
+    <title>
+      Sistema de Prácticas Profesionales
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+     <link href="http://tapp.eafit.edu.co/imagenes/v1/styles/estiloEafit2005.css" type="text/css" rel="stylesheet" />
+  
+  
+    
+
+<table class="noPrint" width="100%" border="0" cellpadding="0" cellspacing="0" background="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/fondo.gif" bgcolor="#336699">
+  <tbody><tr>
+    <td width="182"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/logoEafit.gif" border="0" /></td>
+    <td align="center"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/titulo.gif" border="0" /></td>
+    <td width="186">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td align="right"><a href="http://www.eafit.edu.co" target="_blank"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/homeEafit.gif" border="0" /></a></td>
+        </tr>
+        <tr>
+          <td align="right"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/imagenTop.gif" border="0" /></td>
+        </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+
+    <!-- Pagina de inlusion de taglibs -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javaScript" src="/sisdepp/js/spjavascript.js"></script>
+<script language="javaScript" src="/sisdepp/js/calendario.js"></script>
+<script language="javaScript" src="/sisdepp/js/commons.js"></script>
+<script language="javaScript" src="/sisdepp/js/dom-drag.js"></script>
+<style>
+        .radio {
+            border: 0px;
+        }
+    </style>
+<script type="text/javascript">
+  function preCarga() {
+      MM_preloadImages('http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif', 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_mensaje.gif', 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_advertencia.gif');
+      ajaxerror = 'Un error ha ocurrido. Por favor intente de nuevo mas tarde.';
+      icoError = 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif';
+      msgNoAddFila = 'No es posible adicionar una fila, ya se ha llegado al numero máximo';
+      msgDelFila = 'Esta seguro que desea borrar el registro?';
+
+      try {
+          initDocument();
+      }
+      catch (e) {
+          e.print();
+      }
+  }
+  preCarga();
+  document.body.onload = preCarga;
+</script>
+<!-- fin Pagina de inlusion de taglibs -->
+<p> </p>
+<p align="center">
+  <b>
+    Bienvenido(a)
+    Willy Henao Zea
+  </b>
+</p>
+<script language="javascript">
+    function elegirRol(idRol, descRol){
+        document.rolElegidoForm.idRolElegido.value = idRol;
+        document.rolElegidoForm.descRol.value = descRol;
+        document.rolElegidoForm.submit();
+    }
+</script>
+
+<table width="50%" align="center" cellspacing="0" cellpadding="0" border="0" class="texto">
+    <tbody><tr>
+        <td align="left">
+            Por favor seleccione un rol para continuar  
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+             
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table width="100%" border="1" cellspacing="0" cellpadding="2" class="texto" bordercolor="#336699">
+                <tbody><tr>
+                  <td class="tituloTabla" align="center">        
+                      Lista roles        
+                  </td>
+                </tr>    
+                               
+                    <tr>
+                      <td>
+                        <a href="javascript:elegirRol('250','ADMINISTRADOR');">
+                            ADMINISTRADOR
+                        </a>        
+                      </td>
+                    </tr>
+                               
+                    <tr>
+                      <td>
+                        <a href="javascript:elegirRol('274','JEFE');">
+                            JEFE
+                        </a>        
+                      </td>
+                    </tr>
+                               
+                    <tr>
+                      <td>
+                        <a href="javascript:elegirRol('273','MENTOR');">
+                            MENTOR
+                        </a>        
+                      </td>
+                    </tr>
+                
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<form name="rolElegidoForm" method="post" action="/sisdepp/elegirRol.do">
+    <input type="hidden" name="idRolElegido" value="" />
+    <input type="hidden" name="descRol" value="" />
+</form>
+  
+</html:html>
+</body></html>

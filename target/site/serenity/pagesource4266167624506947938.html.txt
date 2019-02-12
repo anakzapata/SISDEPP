@@ -1,0 +1,644 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body topmargin="0" leftmargin="0"><html:html locale="true">
+  
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+    <title>
+      Sistema de Prácticas Profesionales
+    </title>
+    <link href="http://tapp.eafit.edu.co/imagenes/v1/styles/estiloEafit2005.css" type="text/css" rel="stylesheet" />
+  
+  
+     
+
+    
+      
+    
+
+    
+
+<table class="noPrint" width="100%" border="0" cellpadding="0" cellspacing="0" background="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/fondo.gif" bgcolor="#336699">
+  <tbody><tr>
+    <td width="182"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/logoEafit.gif" border="0" /></td>
+    <td align="center"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/titulo.gif" border="0" /></td>
+    <td width="186">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td align="right"><a href="http://www.eafit.edu.co" target="_blank"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/homeEafit.gif" border="0" /></a></td>
+        </tr>
+        <tr>
+          <td align="right"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/imagenTop.gif" border="0" /></td>
+        </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+
+    
+
+
+
+
+
+
+<script language="javascript">
+    function salir() { 
+        if(confirm("\xBf Est\xE1 seguro que desea salir?\n Esta acci\xF3n borrar\xE1 los datos de logueo")) { 
+               window.location = '/sisdepp/salir.do';
+        }
+    };
+    
+    function loginOther() { 
+        if(confirm("\xBf Est\xE1 seguro que desea salir?\n Esta acci\xF3n borrar\xE1 los datos de logueo, para permitirle loguearse como otro usuario")) { 
+               window.location = '/sisdepp/loginOther.do';
+        }
+    };
+    
+    function cerrar() { 
+        if(confirm("\xBf Est\xE1 seguro que desea cerrar la ventana?")) { 
+               window.close();
+        }
+    };
+</script>
+<table class="noPrint" align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+  <tbody><tr valing="top" align="center" width="90%">
+    <td>
+	  
+            <a href="/sisdepp/prepractica/index.do">
+              <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_prepractica.gif" border="0" alt="Prepráctica" />
+            </a>
+	  
+
+	  
+            <a href="/sisdepp/practica/index.do">
+                <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_practica.gif" border="0" alt="Práctica" />
+            </a>      
+	  
+
+          
+            <a href="/sisdepp/indexEvaluaciones.do">
+                <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_evaluaciones.gif" border="0" alt="Práctica" />
+            </a>      
+	  
+
+           
+                <a href="/sisdepp/certificados/indexCertificado.do">
+                <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_certificados.gif" border="0" title="Certificados y cartas" />
+                </a>
+        
+
+	  
+		<a href="/sisdepp/prepractica/reportes/index.do">
+                    <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_informes.gif" border="0" alt="Informes" />
+                </a>      
+	  
+
+	  
+	
+           <a href="/sisdepp/administracion/reportes/informes.do" onclick="javascript:clearLocalStorage();">
+              <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_informes.gif" border="0" alt="Reportes" title="Reportes" />
+           </a>
+        
+
+          
+            
+          
+      
+        <a href="/sisdepp/administracion/index.do">
+          <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_administracion.gif" border="0" alt="Administracion" />
+        </a>
+      
+     
+      
+        <a href="javascript:loginOther()">
+          <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_usuarios.gif" border="0" alt="Ingresar al Sistema como Otro Usuario" />
+        </a>
+      
+     
+      <a href="/sisdepp/contactenos.do">
+        <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_contactenos.gif" border="0" alt="Contáctenos" />
+      </a>
+      <a href="/sisdepp/ayuda/sph_ayuda.htm" target="_blank">
+        <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_ayuda.gif" border="0" alt="Ayuda" />
+      </a>
+      <a onclick="javascript:salir()">
+        <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_salir.gif" border="0" alt="Salir" />
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<br />
+<div class="noPrint" align="right">
+    <a href="javascript:window.print();">
+     <b>Imprimir</b>
+     <img src="http://tapp.eafit.edu.co/imagenes/v1/icons/ico_print.gif" border="0" alt="Imprimir" />
+    </a>
+</div>    
+    <table border="0" width="100%">
+      <tbody><tr valign="top">
+        <td width="180" class="noPrint">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody><tr><td><script language="javascript">
+function __doback()
+{
+    document.formBack.action = 'regresar.do';
+    document.formBack.submit();
+}
+</script>
+<br /></td></tr>                
+                <tr><td>
+
+
+
+
+
+
+<table width="170" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="5"><img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/topL.gif" width="5" height="5" /></td>
+    <td class="bkgdT"><img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/spacer.gif" width="1" height="5" /></td>
+    <td width="5"><img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/topR.gif" width="5" height="5" /></td>
+  </tr>
+  <tr>
+    <td width="5" class="bkgdL"> </td>
+    <td>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFCC00" class="textoMenu">
+	<tbody><tr>
+		<td class="celda">
+			<img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/bullet.gif" width="9" height="11" />
+		</td>
+		<td colspan="2" class="celda">
+			<p class="textoMenu">
+				<a href="/sisdepp/prepractica/carga.do?IdMenuSuperior=1">
+					<nobr>
+Carga de Estudiantes
+					</nobr>
+				</a>
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="celda"> </td>
+		<td class="celda">
+			<img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/bullet.gif" width="9" height="11" />
+		</td>
+		<td class="celda">
+			<p class="textoMenu">
+				<a href="/sisdepp/prepractica/carga/cargarPaginaCargaManual.do?IdMenuSuperior=7">
+					<nobr>
+Carga Manual
+					</nobr>
+				</a>
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="celda">
+			<img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/bullet.gif" width="9" height="11" />
+		</td>
+		<td colspan="2" class="celda">
+			<p class="textoMenu">
+				<a href="/sisdepp/prepractica/asesores.do?IdMenuSuperior=2">
+					<nobr>
+Asesores
+					</nobr>
+				</a>
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="celda">
+			<img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/bullet.gif" width="9" height="11" />
+		</td>
+		<td colspan="2" class="celda">
+			<p class="textoMenu">
+				<a href="/sisdepp/prepractica/estudiantes/cargarPaginaEstudiantesAdmin.do?IdMenuSuperior=4">
+					<nobr>
+Estudiantes
+					</nobr>
+				</a>
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="celda">
+			<img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/bullet.gif" width="9" height="11" />
+		</td>
+		<td colspan="2" class="celda">
+			<p class="textoMenu">
+				<a href="/sisdepp/prepractica/empresas.do?IdMenuSuperior=5">
+					<nobr>
+Empresas
+					</nobr>
+				</a>
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="celda">
+			<img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/bullet.gif" width="9" height="11" />
+		</td>
+		<td colspan="2" class="celda">
+			<p class="textoMenu">
+				<a href="/sisdepp/administracion/index.do?IdMenuSuperior=6">
+					<nobr>
+Mantenimiento
+					</nobr>
+				</a>
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="celda">
+			<img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/bullet.gif" width="9" height="11" />
+		</td>
+		<td colspan="2" class="celda">
+			<p class="textoMenu">
+				<a href="/sisdepp/prepractica/correspondencia/cargarFormularioCorrespondencia.do?IdMenuSuperior=33">
+					<nobr>
+Correspondencia
+					</nobr>
+				</a>
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="celda">
+			<img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/bullet.gif" width="9" height="11" />
+		</td>
+		<td colspan="2" class="celda">
+			<p class="textoMenu">
+				<a href="/sisdepp/prepractica/estudiantes/hojasdevida/descargarHojasdeVidaPracticante.do?IdMenuSuperior=63">
+					<nobr>
+Decargar Hojas de Vida
+					</nobr>
+				</a>
+			</p>
+		</td>
+	</tr>
+
+</tbody></table>
+
+    </td>
+    <td width="5" class="bkgdR"> </td>
+  </tr>
+  <tr>
+    <td width="5"><img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/downL.gif" width="5" height="5" /></td>
+    <td class="bkgdD"><img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/spacer.gif" width="1" height="5" /></td>
+    <td width="5"><img src="http://tapp.eafit.edu.co/imagenes/v1/menu_izq/downR.gif" width="5" height="5" /></td>
+  </tr>
+</tbody></table>
+</td></tr>                
+            </tbody></table>
+        </td>
+        <td>
+          <!-- Pagina de control de errores en el encabezado -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javaScript" src="/sisdepp/js/spjavascript.js"></script>
+<script language="javaScript" src="/sisdepp/js/calendario.js"></script>
+<script language="javaScript" src="/sisdepp/js/commons.js"></script>
+<script language="javaScript" src="/sisdepp/js/dom-drag.js"></script>
+<style>
+        .radio {
+            border: 0px;
+        }
+    </style>
+<script type="text/javascript">
+  function preCarga() {
+      MM_preloadImages('http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif', 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_mensaje.gif', 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_advertencia.gif');
+      ajaxerror = 'Un error ha ocurrido. Por favor intente de nuevo mas tarde.';
+      icoError = 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif';
+      msgNoAddFila = 'No es posible adicionar una fila, ya se ha llegado al numero máximo';
+      msgDelFila = 'Esta seguro que desea borrar el registro?';
+
+      try {
+          initDocument();
+      }
+      catch (e) {
+          e.print();
+      }
+  }
+  preCarga();
+  document.body.onload = preCarga;
+</script>
+<!-- fin Pagina de control de errores en el encabezado -->
+
+<script language="javascript">
+
+function buscar(){
+	document.ConsultaSimpleEstudianteForm.submit();
+}
+
+function agregar(){
+	document.ConsultaSimpleEstudianteForm.action = "/sisdepp/prepractica/carga/cargarPaginaBusquedaAyre.do";
+	document.ConsultaSimpleEstudianteForm.submit();
+}
+
+function eliminar(strCodigo, strSemestre){
+	icoError = 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif';
+	if(esperando == false){
+                nombre = document.getElementById(strCodigo).value;
+		var objEleccion = confirm('¿Está seguro que desea eliminar el estudiante?' + '\n(' + nombre + ', '+ strCodigo +')' );
+		if(objEleccion){
+			ocultarError();
+			tdNombre = strCodigo;
+			strAccion = "eliminar";
+			openPage("/sisdepp/prepractica/carga/eliminarEstudiante.do", strCodigo, strSemestre);
+		}
+	}
+}
+
+function aplazar(strCodigo, strSemestre, strEstado){
+	icoError = 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif';
+	if(esperando == false){
+		var objEleccion = confirm('¿Está seguro que desea aplazar el estudiante?');
+		if(objEleccion){
+			ocultarError();
+			tdNombre = strCodigo;
+			strAccion = "aplazar";
+			openPage("/sisdepp/prepractica/estudiantes/cambiarEstadoEstudiante.do", strCodigo,strSemestre, 'APL', strEstado);
+		}
+	}
+}
+
+function llegaRespuesta(){
+	if(_getParametro(resultado, 1) == "exito"){
+		if(strAccion == "eliminar") hacerEliminar();
+                if(strAccion == "aplazar") hacerAplazar();
+	}else{
+		mostrarError(ajaxerror, icoError, "msgError");
+	}
+}
+
+function hacerEliminar(){
+	hideElement(tdNombre);	
+	mostrarError("Estudiante eliminado con éxito", "http://tapp.eafit.edu.co/imagenes/v1/icons/ico_mensaje.gif", "msgMensaje");
+}
+
+function hacerAplazar(){
+	hideElement(tdNombre);	
+	mostrarError("Estudiante aplazado con éxito", "http://tapp.eafit.edu.co/imagenes/v1/icons/ico_mensaje.gif", "msgMensaje");
+}
+</script>
+<table border="0" width="100%" align="center">
+  <tbody><tr>
+    <td class="titulo" align="center">
+      Carga Manual de Estudiantes
+    </td>
+  </tr>
+</tbody></table>
+
+<!-- Pagina de control de errores en el encabezado -->
+
+<table width="100%" align="center" cellpadding="2" cellspacing="2">
+    <tbody><tr>
+        <td valign="middle">
+            <table width="50%" align="center" cellpadding="2" cellspacing="2" id="tblError" style="display:none">
+                <tbody><tr>
+                    <td valign="middle">
+                        <img name="mensaje" src="http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif" border="0" />
+                    </td>
+                    <td id="tdDesc" class="msgError">
+                        <span id="descripcion">
+                            Un error ha ocurrido. Por favor intente de nuevo mas tarde.</span>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table width="50%" align="right" cellpadding="2" cellspacing="2" id="tblCargando" style="display:none">
+                <tbody><tr>
+                    <td height="38" align="right">
+                        <img name="Cargando" src="http://tapp.eafit.edu.co/imagenes/v1/icons/ico_animado.gif" border="0" />
+                    </td>
+                </tr>
+            </tbody></table>
+            <table width="50%" align="center" cellpadding="2" cellspacing="2" id="tblSombra">
+                <tbody><tr>
+                    <td> </td>
+                </tr>
+                 
+                <tr>
+                    <td> </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+
+    
+
+
+
+    
+
+
+
+<!-- fin Pagina de control de errores en el encabezado -->
+
+<table border="0" width="100%" align="center">
+  <tbody><tr>
+    <td>
+      Seleccione el semestre y la carrera sobre el cual desea realizar la consulta de estudiantes cargados, para adicionar o borrar estudiantes del proceso del Depp
+    </td>
+  </tr>
+</tbody></table>
+
+<form name="ConsultaSimpleEstudianteForm" method="post" action="/sisdepp/prepractica/carga/cargarPaginaCargaManual.do"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="cf84cd12ac33ac4415ddf17bcc5190d9" /></div>
+	<input type="hidden" name="codigoElegido" value="" />
+	<input type="hidden" name="semestreElegido" value="" />
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		 
+		 <tbody><tr>
+		   <td width="5">
+			  Semestre:
+                    </td>
+		   
+		   <td>
+		     <select name="idSemestre" class="forma"><option value="20191">20191</option>
+<option value="20182">20182</option>
+<option value="20181">20181</option>
+<option value="20172">20172</option>
+<option value="20171">20171</option>
+<option value="20162">20162</option>
+<option value="20161">20161</option>
+<option value="20152">20152</option>
+<option value="20151">20151</option>
+<option value="20142">20142</option>
+<option value="20141">20141</option>
+<option value="20132">20132</option>
+<option value="20131">20131</option>
+<option value="20122">20122</option>
+<option value="20121">20121</option>
+<option value="20112">20112</option>
+<option value="20111">20111</option>
+<option value="20102">20102</option>
+<option value="20101">20101</option>
+<option value="20092">20092</option>
+<option value="20091">20091</option>
+<option value="20082">20082</option>
+<option value="20081">20081</option>
+<option value="20072">20072</option>
+<option value="20071">20071</option>
+<option value="20062">20062</option>
+<option value="20061">20061</option>
+<option value="20052">20052</option>
+<option value="20051">20051</option>
+<option value="20042">20042</option>
+<option value="20041">20041</option>
+<option value="20032">20032</option>
+<option value="20031">20031</option>
+<option value="20022">20022</option>
+<option value="20021">20021</option>
+<option value="20012">20012</option>
+<option value="20011">20011</option>
+<option value="20002">20002</option>
+<option value="20001">20001</option>
+<option value="19992">19992</option>
+<option value="19991">19991</option>
+<option value="19982">19982</option>
+<option value="19981">19981</option>
+<option value="19972">19972</option>
+<option value="19971">19971</option>
+<option value="19962">19962</option>
+<option value="19961">19961</option>
+<option value="19952">19952</option>
+<option value="19951">19951</option>
+<option value="19942">19942</option>
+<option value="19941">19941</option>
+<option value="19932">19932</option>
+<option value="19931">19931</option>
+<option value="19922">19922</option>
+<option value="19921">19921</option>
+<option value="19912">19912</option>
+<option value="19911">19911</option>
+<option value="19902">19902</option>
+<option value="19901">19901</option>
+<option value="19892">19892</option>
+<option value="19891">19891</option>
+<option value="19882">19882</option>
+<option value="19881">19881</option>
+<option value="19872">19872</option>
+<option value="19871">19871</option>
+<option value="19862">19862</option>
+<option value="19861">19861</option>
+<option value="19852">19852</option>
+<option value="19851">19851</option>
+<option value="19842">19842</option>
+<option value="19841">19841</option>
+<option value="19832">19832</option>
+<option value="19831">19831</option>
+<option value="19822">19822</option>
+<option value="19821">19821</option>
+<option value="19812">19812</option>
+<option value="19811">19811</option>
+<option value="19802">19802</option>
+<option value="19801">19801</option>
+<option value="19792">19792</option>
+<option value="19791">19791</option>
+<option value="19782">19782</option>
+<option value="19781">19781</option>
+<option value="19772">19772</option>
+<option value="19771">19771</option>
+<option value="19762">19762</option>
+<option value="19761">19761</option></select>           
+                    </td>
+		 </tr>
+		 
+		 <tr>
+		   <td>
+			  Carrera:
+                    </td>
+		   
+		   <td>
+		     <select name="idCarrera" multiple="multiple" size="5" class="forma"><option value="">-- Seleccione una opción --</option>
+<option value="080-1">ADMINISTRACIÓN DE NEGOCIOS (LLANOGRANDE) LLANOGRANDE - I</option>
+<option value="080-2">ADMINISTRACIÓN DE NEGOCIOS (LLANOGRANDE) LLANOGRANDE - II</option>
+<option value="001-1">ADMINISTRACIÓN DE NEGOCIOS MEDELLÍN - I</option>
+<option value="001-2">ADMINISTRACIÓN DE NEGOCIOS MEDELLÍN - II</option>
+<option value="183-1">BIOLOGÍA MEDELLÍN</option>
+<option value="111-1">CIENCIAS POLÍTICAS MEDELLÍN</option>
+<option value="112-1">COMUNICACIÓN SOCIAL MEDELLÍN</option>
+<option value="011-1">CONTADURÍA PÚBLICA MEDELLÍN - I</option>
+<option value="011-2">CONTADURÍA PÚBLICA MEDELLÍN - II</option>
+<option value="084-1">DERECHO MEDELLÍN</option>
+<option value="003-1">ECONOMÍA MEDELLÍN</option>
+<option value="199-1">FINANZAS MEDELLÍN</option>
+<option value="015-1">GEOLOGÍA MEDELLÍN</option>
+<option value="082-1">INGENIERÍA CIVIL (LLANOGRANDE) LLANOGRANDE</option>
+<option value="013-1">INGENIERÍA CIVIL MEDELLÍN</option>
+<option value="085-1">INGENIERÍA DE DISEÑO DE PRODUCTO MEDELLÍN</option>
+<option value="004-1">INGENIERÍA DE PROCESOS MEDELLÍN</option>
+<option value="012-1">INGENIERÍA DE PRODUCCIÓN MEDELLÍN</option>
+<option value="081-1">INGENIERÍA DE SISTEMAS (LLANOGRANDE) LLANOGRANDE</option>
+<option value="010-1">INGENIERÍA DE SISTEMAS MEDELLÍN</option>
+<option value="113-1">INGENIERÍA FÍSICA MEDELLÍN</option>
+<option value="101-1">INGENIERÍA MATEMÁTICA MEDELLÍN</option>
+<option value="014-1">INGENIERÍA MECÁNICA MEDELLÍN</option>
+<option value="169-1">MERCADEO MEDELLÍN</option>
+<option value="083-1">MÚSICA MEDELLÍN</option>
+<option value="002-1">NEGOCIOS INTERNACIONALES MEDELLÍN</option>
+<option value="168-1">PSICOLOGÍA MEDELLÍN</option></select>           </td>
+		 </tr>
+		 
+		 <tr valign="middle">
+                    <td colspan="2">
+                        <div align="center">
+                            <a href="javascript:buscar();">
+                                <img src="http://tapp.eafit.edu.co/imagenes/v1/botones/btn_buscar.gif" border="0" />
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+	</tbody></table>
+	
+	<p> </p>
+	
+		<table border="0" width="100%" align="center">
+		  <tbody><tr>
+			<td align="right">
+                            <a href="javascript:agregar();">
+                                    <img src="http://tapp.eafit.edu.co/imagenes/v1/botones/btn_agregar.gif" border="0" />
+                            </a>
+			</td>
+		  </tr>
+		</tbody></table>
+	
+	
+        
+</form>
+
+          <div align="center" class="noPrint">
+            <div align="center" class="mini">
+                Los campos marcados con * son obligatorios
+                <p>
+                Utilice <a href="http://www.microsoft.com/downloads/details.aspx?displaylang=es&amp;FamilyID=1e1550cb-5e5d-48f5-b02b-20b602228de6" target="_blank">Internet Explorer 6.0</a> o una versión superior de este navegador.
+                </p><p>
+            </p></div>
+          </div>
+        </td>
+      </tr>
+    </tbody></table>
+  
+</html:html>
+</body></html>
