@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Contactenos Universidad EAFIT" skipped="0" tests="2" time="15.05" timestamp="2019-02-12 10:32:49"><testcase name="Login a la aplicacion SISDEPP"/><testcase name="Menú PREPRACTICA"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Contactenos Universidad EAFIT" skipped="0" tests="3" time="23.42" timestamp="2019-02-12 11:42:12"><testcase name="Login a la aplicacion SISDEPP"/><testcase name="Menú PREPRACTICA"/><testcase name="opción Agenda"/></testsuite>

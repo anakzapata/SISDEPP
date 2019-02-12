@@ -47,20 +47,21 @@ public class LoginSisdeppStep {
 		loginSisdeppPage.VeMensajeCarga(MenCargMan);		
 	}
 
-	
-
-
-
-	
+	public void IngresarMenAgen() {
+		loginSisdeppPage.IngresarMenAgen();		
+	}
 
 	
 
+	public void IngresarMenAsesores() {
+		loginSisdeppPage.IngresarMenAsesores();
+	}
+
+	public void VemensajeAgenda(String MenAgenda) {
+		loginSisdeppPage.VemensajeAgenda(MenAgenda);
+	}
+
+
 	
 
-
-
-	
-
-
-	
 }

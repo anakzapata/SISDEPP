@@ -9,7 +9,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions (features = "src/test/resources/features/Eafit/practica.feature", 
-				 tags = "@Regresion",
+				 tags = "@Regresion", //"@Regresion",
 				  glue = "co.com.eafit.definitions",
 				  snippets = SnippetType.CAMELCASE )
 				  

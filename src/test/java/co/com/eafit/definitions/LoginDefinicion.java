@@ -64,5 +64,32 @@ public void elVeEnPantallaElMensaje(String MenCargMan) throws Exception {
 		
 		loginSisdepSteps.VeMensajeCarga(MenCargMan);
 	}
+
+
+
+
+
+
+@Given("^que un administrador quiere verificar el menú Agenda$")
+public void queUnAdministradorQuiereVerificarElMenúAgenda() throws Exception {
+	loginSisdepSteps.IngresarMenPrep();
 }
 
+
+@When("^el selecciona la opción Asesores$")
+public void elSeleccionaLaOpciónAsesores() throws Exception {
+	loginSisdepSteps.IngresarMenAsesores();
+}
+
+@When("^selecciona la opción Agenda$")
+public void seleccionaLaOpciónAgenda() throws Exception {
+	loginSisdepSteps.IngresarMenAgen();
+
+}
+
+@Then("^el ve en pantalla el mensaje agenda \"([^\"]*)\"$")
+public void elVeEnPantallaElMensajeAgenda(String MenAgenda) throws Exception {
+	loginSisdepSteps.VemensajeAgenda(MenAgenda);
+
+}
+}

@@ -45,6 +45,14 @@ public class LoginSisdeppPage extends PageObject {
 	@FindBy (className = "titulo")
     public WebElementFacade lbMensCar;
 	
+	@FindBy (linkText="Asesores")
+    public WebElementFacade lbTAsesores;
+	
+	@FindBy (linkText= "Agenda")
+    public WebElementFacade lbTAgenda;
+	
+	@FindBy (className = "titulo")
+    public WebElementFacade lbMensAgen;
 	
 	public void login(String user, String pass) {
 		getDriver().switchTo().frame(0);
@@ -84,6 +92,26 @@ public class LoginSisdeppPage extends PageObject {
 		assertThat(strMensajeC, containsString(menCargMan));
 		
 	}
+	
+
+	public void IngresarMenAsesores() {
+		lbTAsesores.click();
+	}
+
+	
+
+	public void IngresarMenAgen() {
+		lbTAgenda.click();
+		
+	}
+
+	public void VemensajeAgenda(String MenAgenda) {
+		String strMensajeA=lbMensAgen.getText();
+		assertThat(strMensajeA, containsString(MenAgenda));
+		
+	}
+
+	
 
 	
 	
