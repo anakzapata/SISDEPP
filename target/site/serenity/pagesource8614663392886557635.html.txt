@@ -1,0 +1,235 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body topmargin="0" leftmargin="0"><html:html locale="true">
+  
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+    
+    <title>
+      Sistema de Prácticas Profesionales
+    </title>
+    <link href="http://tapp.eafit.edu.co/imagenes/v1/styles/estiloEafit2005.css" type="text/css" rel="stylesheet" />
+  
+  
+    
+
+<table class="noPrint" width="100%" border="0" cellpadding="0" cellspacing="0" background="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/fondo.gif" bgcolor="#336699">
+  <tbody><tr>
+    <td width="182"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/logoEafit.gif" border="0" /></td>
+    <td align="center"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/titulo.gif" border="0" /></td>
+    <td width="186">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td align="right"><a href="http://www.eafit.edu.co" target="_blank"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/homeEafit.gif" border="0" /></a></td>
+        </tr>
+        <tr>
+          <td align="right"><img src="http://tapp.eafit.edu.co/imagenes/v1/apps/sisdepp/imagenTop.gif" border="0" /></td>
+        </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+
+    
+
+
+
+
+
+
+<script language="javascript">
+    function salir() { 
+        if(confirm("\xBf Est\xE1 seguro que desea salir?\n Esta acci\xF3n borrar\xE1 los datos de logueo")) { 
+               window.location = '/sisdepp/salir.do';
+        }
+    };
+    
+    function loginOther() { 
+        if(confirm("\xBf Est\xE1 seguro que desea salir?\n Esta acci\xF3n borrar\xE1 los datos de logueo, para permitirle loguearse como otro usuario")) { 
+               window.location = '/sisdepp/loginOther.do';
+        }
+    };
+    
+    function cerrar() { 
+        if(confirm("\xBf Est\xE1 seguro que desea cerrar la ventana?")) { 
+               window.close();
+        }
+    };
+</script>
+<table class="noPrint" align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+  <tbody><tr valing="top" align="center" width="90%">
+    <td>
+	  
+            <a href="/sisdepp/prepractica/index.do">
+              <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_prepractica.gif" border="0" alt="Prepráctica" />
+            </a>
+	  
+
+	  
+            <a href="/sisdepp/practica/index.do">
+                <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_practica.gif" border="0" alt="Práctica" />
+            </a>      
+	  
+
+          
+            <a href="/sisdepp/indexEvaluaciones.do">
+                <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_evaluaciones.gif" border="0" alt="Práctica" />
+            </a>      
+	  
+
+           
+                <a href="/sisdepp/certificados/indexCertificado.do">
+                <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_certificados.gif" border="0" title="Certificados y cartas" />
+                </a>
+        
+
+	  
+		<a href="/sisdepp/prepractica/reportes/index.do">
+                    <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_informes.gif" border="0" alt="Informes" />
+                </a>      
+	  
+
+	  
+	
+           <a href="/sisdepp/administracion/reportes/informes.do" onclick="javascript:clearLocalStorage();">
+              <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_informes.gif" border="0" alt="Reportes" title="Reportes" />
+           </a>
+        
+
+          
+            
+          
+      
+        <a href="/sisdepp/administracion/index.do">
+          <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_administracion.gif" border="0" alt="Administracion" />
+        </a>
+      
+     
+      
+        <a href="javascript:loginOther()">
+          <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_usuarios.gif" border="0" alt="Ingresar al Sistema como Otro Usuario" />
+        </a>
+      
+     
+      <a href="/sisdepp/contactenos.do">
+        <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_contactenos.gif" border="0" alt="Contáctenos" />
+      </a>
+      <a href="/sisdepp/ayuda/sph_ayuda.htm" target="_blank">
+        <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_ayuda.gif" border="0" alt="Ayuda" />
+      </a>
+      <a onclick="javascript:salir()">
+        <img src="http://tapp.eafit.edu.co/imagenes/v1/menu_sup/btn_salir.gif" border="0" alt="Salir" />
+      </a>
+    </td>
+  </tr>
+</tbody></table>
+<br />
+<div class="noPrint" align="right">
+    <a href="javascript:window.print();">
+     <b>Imprimir</b>
+     <img src="http://tapp.eafit.edu.co/imagenes/v1/icons/ico_print.gif" border="0" alt="Imprimir" />
+    </a>
+</div>
+    <!-- Pagina de inclusion de taglibs -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javaScript" src="/sisdepp/js/spjavascript.js"></script>
+<script language="javaScript" src="/sisdepp/js/calendario.js"></script>
+<script language="javaScript" src="/sisdepp/js/commons.js"></script>
+<script language="javaScript" src="/sisdepp/js/dom-drag.js"></script>
+<style>
+        .radio {
+            border: 0px;
+        }
+    </style>
+<script type="text/javascript">
+  function preCarga() {
+      MM_preloadImages('http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif', 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_mensaje.gif', 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_advertencia.gif');
+      ajaxerror = 'Un error ha ocurrido. Por favor intente de nuevo mas tarde.';
+      icoError = 'http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif';
+      msgNoAddFila = 'No es posible adicionar una fila, ya se ha llegado al numero máximo';
+      msgDelFila = 'Esta seguro que desea borrar el registro?';
+
+      try {
+          initDocument();
+      }
+      catch (e) {
+          e.print();
+      }
+  }
+  preCarga();
+  document.body.onload = preCarga;
+</script>
+<!-- fin Pagina de inclusion de taglibs -->
+
+<!-- Pagina de control de errores en el encabezado -->
+
+<table width="100%" align="center" cellpadding="2" cellspacing="2">
+    <tbody><tr>
+        <td valign="middle">
+            <table width="50%" align="center" cellpadding="2" cellspacing="2" id="tblError" style="display:none">
+                <tbody><tr>
+                    <td valign="middle">
+                        <img name="mensaje" src="http://tapp.eafit.edu.co/imagenes/v1/icons/ico_error.gif" border="0" />
+                    </td>
+                    <td id="tdDesc" class="msgError">
+                        <span id="descripcion">
+                            Un error ha ocurrido. Por favor intente de nuevo mas tarde.</span>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table width="50%" align="right" cellpadding="2" cellspacing="2" id="tblCargando" style="display:none">
+                <tbody><tr>
+                    <td height="38" align="right">
+                        <img name="Cargando" src="http://tapp.eafit.edu.co/imagenes/v1/icons/ico_animado.gif" border="0" />
+                    </td>
+                </tr>
+            </tbody></table>
+            <table width="50%" align="center" cellpadding="2" cellspacing="2" id="tblSombra">
+                <tbody><tr>
+                    <td> </td>
+                </tr>
+                 
+                <tr>
+                    <td> </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+
+    
+
+
+
+    
+
+
+
+<!-- fin Pagina de control de errores en el encabezado -->
+
+<p align="center">
+  <b>
+    Bienvenido(a)
+    Willy Henao Zea
+  </b>
+</p>
+
+    <div align="center" class="mini">
+      Utilice <a href="http://www.microsoft.com/downloads/details.aspx?displaylang=es&amp;FamilyID=1e1550cb-5e5d-48f5-b02b-20b602228de6" target="_blank">Internet Explorer 6.0</a> o una versión superior de este navegador.
+      <p>
+    </p></div>
+   
+</html:html>
+</body></html>
