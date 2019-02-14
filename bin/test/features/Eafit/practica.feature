@@ -1,10 +1,7 @@
 #Author: your.email@your.domain.com
 
 @Regresion
-Feature: Contactenos Universidad EAFIT
-Como estudiante
-Quiero enviar un comentario a la Universidad EAFIT
-A través de la pagina de contáctenos
+Feature: SISDEPP
 
 
 Background: Login a la aplicacion SISDEPP
@@ -15,19 +12,35 @@ And selecciona el rol Administrador
 
 @Login
 Scenario: Login a la aplicacion SISDEPP
-Then el muestra en pantalla el menú "Administrador"
+Then el muestra en pantalla el menu "Administrador"
+And el ve el mensaje "Bienvenido(a) Willy Henao Zea"
+
 
 @CargaManual
-Scenario: Menú PREPRACTICA
-Given que un administrador quiere verificar el menú Prepráctica
-When selecciona la opción Carga de estudiantes
-And selecciona la opción Carga manual
+Scenario: Opcion Carga Manual estudiantes
+Given que un administrador quiere verificar el menu Prepractica
+When selecciona la opcion Carga de estudiantes
+And selecciona la opcion Carga manual
 Then el ve en pantalla el mensaje "Carga Manual de Estudiante"
 
 @Agenda
-Scenario: opción Agenda  
-Given que un administrador quiere verificar el menú Agenda
-When el selecciona la opción Asesores
-And selecciona la opción Agenda
+Scenario: opcion Agenda  
+Given que un administrador quiere verificar el menu Agenda
+When el selecciona la opcion Asesores
+And selecciona la opcion Agenda
 Then el ve en pantalla el mensaje agenda "Agenda"
  
+ @ModificarAsesor
+Scenario: Modificar Asesor 
+Given que un administrador quiere verificar el menu Modificar Asesor
+When  selecciona la opcion Asesores
+And selecciona la opcion Modificar Asesor
+Then el ve en pantalla el mensaje Asesores "Asesores"
+
+#@RegistrarAsesor
+#Scenario: Opcion Registrar Asesor 
+#Given que un administrador quiere verificar el menú Registrar Asesor
+#When selecciona la opcion Asesores
+#And selecciona la opcion Registrar Asesor
+#Then el ve en pantalla el mensaje Registrar Asesor "Registrar Asesor"
+

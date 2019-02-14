@@ -1,9 +1,19 @@
 package co.com.eafit.pageobject;
 
 import static org.hamcrest.Matchers.containsString;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
+
+import javax.imageio.ImageIO;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -14,6 +24,7 @@ import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
+
 
 @DefaultUrl("http://tapp.eafit.edu.co/sisdepp/")
 public class LoginSisdeppPage extends PageObject {
@@ -33,7 +44,7 @@ public class LoginSisdeppPage extends PageObject {
 	@FindBy (css= "img[alt='Administracion']")
     public WebElementFacade lbtitulo;
 	
-	@FindBy (css= "img[alt='Prepráctica']")
+	@FindBy (xpath= "//a[@href='/sisdepp/prepractica/index.do']")
     public WebElementFacade lbTPrep;
 	
 	@FindBy (linkText= "Carga de Estudiantes")
@@ -54,14 +65,23 @@ public class LoginSisdeppPage extends PageObject {
 	@FindBy (className = "titulo")
     public WebElementFacade lbMensAgen;
 	
-	public void login(String user, String pass) {
+	@FindBy (linkText="Modificar Asesor")
+    public WebElementFacade lbModAsesor;
+	
+	@FindBy (className = "titulo")
+    public WebElementFacade lbMensModAse;
+	
+	@FindBy (xpath = "// * [contains (text (), 'Bienvenido(a)')]")
+    public WebElementFacade lbMensBien;
+	
+	public void login(String user, String pass) throws Exception {
 		getDriver().switchTo().frame(0);
 		txtUsuario.sendKeys(user);
 		txtPasword.sendKeys(pass);
 		btnSingIn.click();
 	}
 
-	public void seleccionarRol() {	
+	public void seleccionarRol() throws Exception {	
 		linkAdmin.click();
 		}
 
@@ -72,12 +92,12 @@ public class LoginSisdeppPage extends PageObject {
 		
 	}
 
-	public void IngresarMenPrep() {
+	public void IngresarMenPrep() throws Exception {
 		lbTPrep.click();
 		
 	}
 
-	public void SeleccionarCargaEst() {
+	public void SeleccionarCargaEst() throws Exception {
 		lbCargaEst.click();
 		
 	}
@@ -111,7 +131,25 @@ public class LoginSisdeppPage extends PageObject {
 		
 	}
 
-	
+	public void IngresarMenModAse() {
+		lbModAsesor.click();
+		
+	}
+
+	public void VemensajeAsesores(String menAsesores) {
+		String strMensajeMA=lbMensModAse.getText();
+		assertThat(strMensajeMA, containsString(menAsesores));
+		
+	}
+
+	public void VerificarMen(String menBien) {
+		String strMensajeB=lbMensBien.getText();
+		//assertThat(strMensajeB, containsString(menBien));
+		assertEquals(strMensajeB, menBien);		
+	}
+
+
+
 
 	
 	
