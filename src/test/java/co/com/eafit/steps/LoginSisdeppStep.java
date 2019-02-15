@@ -74,6 +74,15 @@ public class LoginSisdeppStep {
 		loginSisdeppPage.VerificarMen(menBien) ;
 		
 	}
+	@Step
+	public void IngresarMenRegAs() {
+		loginSisdeppPage.IngresarMenRegAs();
+		
+	}
+	@Step
+	public void VemensajeRegAsesores(String MenRegAse) {
+		loginSisdeppPage.VemensajeRegAsesores(MenRegAse);
+	}
 
 
 	

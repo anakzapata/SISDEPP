@@ -37,10 +37,10 @@ When  selecciona la opcion Asesores
 And selecciona la opcion Modificar Asesor
 Then el ve en pantalla el mensaje Asesores "Asesores"
 
-#@RegistrarAsesor
-#Scenario: Opcion Registrar Asesor 
-#Given que un administrador quiere verificar el menú Registrar Asesor
-#When selecciona la opcion Asesores
-#And selecciona la opcion Registrar Asesor
-#Then el ve en pantalla el mensaje Registrar Asesor "Registrar Asesor"
+@RegistrarAsesor
+Scenario: Opcion Registrar Asesor 
+Given que un administrador quiere verificar el menu Registrar Asesor
+When selecciona la opcion Asesores
+And selecciona la opcion Registrar Asesor
+Then el ve en pantalla el mensaje Registrar Asesor "Registro Asesor"
 
