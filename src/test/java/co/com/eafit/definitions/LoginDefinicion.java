@@ -116,6 +116,22 @@ public void elVeEnPantallaElMensajeAsesores(String MenAsesores) throws Exception
 
 }
 
+@Given("^que un administrador quiere verificar el menu Registrar Asesor$")
+public void queUnAdministradorQuiereVerificarElMenúRegistrarAsesor() throws Exception {
+	loginSisdepSteps.IngresarMenPrep();
+
+}
+
+
+@When("^selecciona la opcion Registrar Asesor$")
+public void seleccionaLaOpcionRegistrarAsesor() throws Exception {
+	loginSisdepSteps.IngresarMenRegAs();
+}
+
+@Then("^el ve en pantalla el mensaje Registrar Asesor \"([^\"]*)\"$")
+public void elVeEnPantallaElMensajeRegistrarAsesor(String MenRegAse) throws Exception {
+   loginSisdepSteps.VemensajeRegAsesores(MenRegAse);
+}
 
 
 }

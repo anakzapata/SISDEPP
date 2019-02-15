@@ -74,6 +74,12 @@ public class LoginSisdeppPage extends PageObject {
 	@FindBy (xpath = "// * [contains (text (), 'Bienvenido(a)')]")
     public WebElementFacade lbMensBien;
 	
+	@FindBy (linkText="Registrar Asesor")
+    public WebElementFacade lbTRegAse;
+	
+	@FindBy (className = "titulo")
+    public WebElementFacade lbMensRAse;
+	
 	public void login(String user, String pass) throws Exception {
 		getDriver().switchTo().frame(0);
 		txtUsuario.sendKeys(user);
@@ -146,6 +152,16 @@ public class LoginSisdeppPage extends PageObject {
 		String strMensajeB=lbMensBien.getText();
 		//assertThat(strMensajeB, containsString(menBien));
 		assertEquals(strMensajeB, menBien);		
+	}
+
+	public void IngresarMenRegAs() {
+		lbTRegAse.click();		
+	}
+
+	public void VemensajeRegAsesores(String menRegAse) {
+		String strMensajeMR=lbMensRAse.getText();
+		assertThat(strMensajeMR, containsString(menRegAse));
+		
 	}
 
 
