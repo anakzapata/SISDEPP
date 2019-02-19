@@ -22,9 +22,9 @@ public class InformesSideppPage extends PageObject{
     public WebElementFacade lbMosaicoA;
 	@FindBy (linkText= "Mosaico Mentor")
     public WebElementFacade lbMosaicoM;
-	@FindBy (linkText= "Reporte de Vinculación")
+	@FindBy (xpath= "//a[@href='/sisdepp/prepractica/reportes/estudiantesPorVinculacion.do']")
     public WebElementFacade lbRepVin;
-	@FindBy (linkText= "Candidatos Práctica")
+	@FindBy (xpath= "//a[@href='/sisdepp/prepractica/reportes/candidatos.do']")
     public WebElementFacade lbCanPra;
 	@FindBy (linkText= "Idioma y Promedio")
     public WebElementFacade lbIdiPro;
@@ -39,6 +39,8 @@ public class InformesSideppPage extends PageObject{
 	
 	@FindBy (className = "titulo")
     public WebElementFacade lbTitulo;
+	@FindBy (xpath = "//*[contains (text (), 'Bienvenido(a)')]")
+    public WebElementFacade lbMensBien;
 
 	public void abrirMenu(String imgMenu) {
 		//lbTMenu.findBy("img[alt='"+imgMenu+"']");
@@ -67,34 +69,19 @@ public class InformesSideppPage extends PageObject{
 						break;
 			case "P":	lbProcesos.click();
 						break;
-			case "CE":	lbEvaluaciones.click();
-						break;
 		}
 	}
 
 	public void verificarTitulo(String pageTitulo) {
 		String strTitulo = lbTitulo.getText();
-		assertEquals(strTitulo, pageTitulo);
-		/*switch (pageTitulo) {
-			case "Informe Mosaico":	assertEquals(strTitulo, pageTitulo);	
+		switch (pageTitulo) {
+			case "CONSULTAR ESTUDIANTES POR VINCULACI":	assertThat(strTitulo, containsString(pageTitulo));	
 						break;
-			case "Informe Mosaico Mentor":	lbMosaicoM.click();
+			case "RESUMEN CANDIDATOS A PR":	assertThat(strTitulo, containsString(pageTitulo));
 						break;
-			case "CONSULTAR ESTUDIANTES POR VINCULACIÓN":	lbRepVin.click();
-						break;
-			case "RESUMEN CANDIDATOS A PRÁCTICA POR CARRERA - PREPRÁCTICA":	lbCanPra.click();
-						break;
-			case "Estudiantes":	lbIdiPro.click();
-						break;
-			case "Solicitudes":	lbSolicitudes.click();
-						break;
-			case "ENTREVISTAS POR ESTUDIANTE":	lbEntrevistas.click();
-						break;
-			case "PROCESOS POR ESTUDIANTE":	lbProcesos.click();
-						break;
-			case "CE":	lbEvaluaciones.click();
-						break;
-	}*/
+			default:				
+				assertEquals(strTitulo, pageTitulo);
+		}
 	}
 
 	public void abrirMenuInf() {
