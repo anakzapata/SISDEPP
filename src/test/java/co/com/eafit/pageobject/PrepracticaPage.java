@@ -4,30 +4,16 @@ import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.List;
 
-import javax.imageio.ImageIO;
-
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 
-import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 
 
 @DefaultUrl("http://tapp.eafit.edu.co/sisdepp/")
-public class LoginSisdeppPage extends PageObject {
+public class PrepracticaPage extends PageObject {
 
 	@FindBy (name= "login")
 	public WebElementFacade txtUsuario;
