@@ -10,11 +10,11 @@ Background:
 	  Given que un administrador quiere ingresar a SISDEPP y Probar el Modulo de Practica
     When el ingresa usuario "whenaoze" y clave "hola"
 		And selecciona el rol Administrador
-		 And el selecciona el menú Práctica	
+		 And el selecciona el menu Practica	
 		
 
   Scenario: Menu Practica Actualizacion Datos Basicos.
-  	When selecciona la opción Actualizacion Datos Basicos
+  	When selecciona la opcion Actualizacion Datos Basicos
  	  Then el ve en la aplicacion el mensaje "Mentores"
  	  
  	  
