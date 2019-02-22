@@ -1,7 +1,7 @@
 #Author: your.email@your.domain.com
 
 @Regresion
-Feature: SISDEPP
+Feature: Prepractica sisdepp
 
 
 Background: Login a la aplicacion SISDEPP
