@@ -18,4 +18,8 @@ public class InformesSisdeppStep {
 		informesSideppPage.verificarTitulo(pageTitulo);		
 	}
 
+	public void abrirMenuInf() {
+		informesSideppPage.abrirMenuInf();
+	}
+
 }

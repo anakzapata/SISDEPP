@@ -8,8 +8,9 @@ import cucumber.api.SnippetType;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions (features = "src/test/resources/features/Eafit/practica_estudiante.feature", 
-				 tags = "@Estudiante", //"@Regresion",
+
+@CucumberOptions (features = "src/test/resources/features/Eafit/", 
+				 //tags = "@Regresion, @Informes",
 				  glue = "co.com.eafit.definitions",
 				  snippets = SnippetType.CAMELCASE )
 				  

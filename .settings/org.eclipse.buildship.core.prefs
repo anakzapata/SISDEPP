@@ -1,6 +1,10 @@
 auto.sync=false
 build.scans.enabled=false
+<<<<<<< HEAD
 connection.gradle.distribution=GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(W\:\\Software\\Automatizacion\\Instaladores\\gradle-4.10.2-all\\gradle-4.10.2))
+=======
+connection.gradle.distribution=GRADLE_DISTRIBUTION(VERSION(4.10.2))
+>>>>>>> 4d868724f41f994f59c8ed625be9c77758fbde0a
 connection.project.dir=
 eclipse.preferences.version=1
 gradle.user.home=
