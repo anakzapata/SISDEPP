@@ -1,7 +1,7 @@
 #Author: your.email@your.domain.com
 
 @Estudiante
-Feature: Estudiante sisdepp
+Feature: Practica Estudiante sisdepp
 
 
 Background: Login a la aplicacion SISDEPP

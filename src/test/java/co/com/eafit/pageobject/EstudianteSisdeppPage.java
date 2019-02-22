@@ -57,10 +57,10 @@ public class EstudianteSisdeppPage extends PageObject {
 	@FindBy (linkText="Asesores")
     public WebElementFacade lbTAsesores;
 
-	@FindBy (linkText= "Información Personal")
+	@FindBy (xpath= "//a[@href='/sisdepp/prepractica/estudiantes/hojasdevida/cargarPaginaInfoPersonal.do?IdMenuSuperior=11']")
 	public WebElementFacade linkInfoPersonal;
 	
-	@FindBy (linkText= "Información Académica")
+	@FindBy (xpath= "//a[@href='/sisdepp/prepractica/estudiantes/hojasdevida/cargarPaginaInformacionAcademica.do?IdMenuSuperior=12']")
 	public WebElementFacade linkInfoAcademica;
 	
 	@FindBy (linkText= "Experiencia Laboral")
@@ -81,7 +81,7 @@ public class EstudianteSisdeppPage extends PageObject {
 	@FindBy (xpath = "// * [contains (text (), 'Bienvenido(a)')]")
     public WebElementFacade lbMensBien;
 
-	@FindBy (linkText= "Formación y Habilidades Complementarias")
+	@FindBy (xpath= "//a[@href='/sisdepp/prepractica/estudiantes/hojasdevida/cargarPaginaFormacionYHabilidades.do?IdMenuSuperior=14']")
 	public WebElementFacade linkFormacion;
 	
 	@FindBy (linkText= "Otras Actividades")

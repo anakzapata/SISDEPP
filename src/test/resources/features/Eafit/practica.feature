@@ -1,6 +1,6 @@
 #Author: your.email@your.domain.com
 @Regresion
-Feature: Aplicacion Sisdepp
+Feature: Practica Sisdepp
   Como estudiante
   Quiero navegar en la aplicacion
   A través de la pagina de sisdepp
