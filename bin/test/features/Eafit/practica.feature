@@ -1,46 +1,65 @@
 #Author: your.email@your.domain.com
-
 @Regresion
-Feature: SISDEPP
+Feature: Aplicacion Sisdepp
+  Como estudiante
+  Quiero navegar en la aplicacion
+  A través de la pagina de sisdepp
 
 
-Background: Login a la aplicacion SISDEPP
-Given que un administrador quiere ingresar a SISDEPP
-When el ingresa usuario "whenaoze" y clave "hola"
-And selecciona el rol Administrador
+Background: 
+	  Given que un administrador quiere ingresar a SISDEPP y Probar el Modulo de Practica
+    When el ingresa usuario "whenaoze" y clave "hola"
+		And selecciona el rol Administrador
+		 And el selecciona el menú Práctica	
+		
 
-
-@Login
-Scenario: Login a la aplicacion SISDEPP
-Then el muestra en pantalla el menu "Administrador"
-And el ve el mensaje "Bienvenido(a) Willy Henao Zea"
-
-
-@CargaManual
-Scenario: Opcion Carga Manual estudiantes
-Given que un administrador quiere verificar el menu Prepractica
-When selecciona la opcion Carga de estudiantes
-And selecciona la opcion Carga manual
-Then el ve en pantalla el mensaje "Carga Manual de Estudiante"
-
-@Agenda
-Scenario: opcion Agenda  
-Given que un administrador quiere verificar el menu Agenda
-When el selecciona la opcion Asesores
-And selecciona la opcion Agenda
-Then el ve en pantalla el mensaje agenda "Agenda"
- 
- @ModificarAsesor
-Scenario: Modificar Asesor 
-Given que un administrador quiere verificar el menu Modificar Asesor
-When  selecciona la opcion Asesores
-And selecciona la opcion Modificar Asesor
-Then el ve en pantalla el mensaje Asesores "Asesores"
-
-@RegistrarAsesor
-Scenario: Opcion Registrar Asesor 
-Given que un administrador quiere verificar el menu Registrar Asesor
-When selecciona la opcion Asesores
-And selecciona la opcion Registrar Asesor
-Then el ve en pantalla el mensaje Registrar Asesor "Registro Asesor"
-
+  Scenario: Menu Practica Actualizacion Datos Basicos.
+  	When selecciona la opción Actualizacion Datos Basicos
+ 	  Then el ve en la aplicacion el mensaje "Mentores"
+ 	  
+ 	  
+ 	Scenario: Menu Practica Reporte Vinculacion.
+	 	When Escoje Reporte de Vinculacion
+		Then el visualiza en pantalla el msj "Reporte de Vinculación"
+	
+	
+	Scenario: Menu Practica Evaluacion.
+		When selecciona la opcion Realizar Evaluacion
+		Then el visualiza en pantalla el mensaje "Evaluación al estudiante de práctica"
+		
+		
+	Scenario: Menu Practica  Administracion de Mentores.
+		When utiliza la opcion Administracion de Mentores
+		Then el visualiza en la app  el mensaje "Mentores"	
+		
+	Scenario: Menu Practica Ceacion de Grupos.
+		When selecciona la opcion crear grupo
+		Then el usuario visualiza en pantalla el mensaje "CREAR GRUPO"	
+		
+	
+	Scenario: Menu Practica Consultar Grupo.
+		When utiliza la opcion consultar grupo
+		Then el Administrador visualiza en pantalla el mensaje "Consultar Grupo"	
+		
+	Scenario: Menu Practica Correspondencia.
+		When selecciona la opcion correspondencia
+		Then visualiza en pantalla el mensaje "Correspondencia PRÁCTICA"
+		
+		
+	Scenario: Menu Practica Correspondencia Jefes.
+		When selecciona la opcion correspondencia jefes
+		Then se verifica en pantalla el mensaje "Correspondencia Jefes"	
+		
+		
+	Scenario: Menu Practica Correspondencia Mentores.
+		When selecciona la opcion correspondencia mentores
+		Then se realiza la verificacaion el mensaje "Correspondencia Mentores"
+		
+	
+	Scenario: Menu Practica Consultar Grupo Por Semestre.
+	  When selecciona la opcion consultar grupo
+		Then el visualiza en pantalla el mensaje "Consultar Grupo"
+		
+	Scenario: Menu Practica Consultar Estudiantes.
+		When click la opcion Consultar Estudiantes
+		Then el verifica en pantalla el mensaje "Consultar Estudiantes"

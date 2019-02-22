@@ -1,87 +1,87 @@
 package co.com.eafit.steps;
 
-import co.com.eafit.pageobject.LoginSisdeppPage;
+import co.com.eafit.pageobject.PrepracticaPage;
 import net.thucydides.core.annotations.Step;
 
 
 
-public class LoginSisdeppStep {
+public class PrepracticaStep {
 
 	
-	LoginSisdeppPage loginSisdeppPage;
+	PrepracticaPage prepracticaPage;
 	@Step
 	public void Abrirpagina() {
-		loginSisdeppPage.open();	
+		prepracticaPage.open();	
 	}
 	@Step
 	public void IngresarCredenciales(String user, String pass) throws Exception {
-		loginSisdeppPage.login(user, pass);	
+		prepracticaPage.login(user, pass);	
 	}
 	@Step
 	public void seleccionarRol() throws Exception {
-		loginSisdeppPage.seleccionarRol();		
+		prepracticaPage.seleccionarRol();		
 	}
 	@Step
 	public void MostrarMensaje(String msj) {
 		
-		loginSisdeppPage.MostrarMensaje(msj);
+		prepracticaPage.MostrarMensaje(msj);
 	}
 	@Step
 	public void IngresarMenPrep() throws Exception {
-		loginSisdeppPage.IngresarMenPrep();
+		prepracticaPage.IngresarMenPrep();
 		
 	}
 	@Step
 	public void SeleccionarCargaEst() throws Exception {
-		loginSisdeppPage.SeleccionarCargaEst();
+		prepracticaPage.SeleccionarCargaEst();
 		
 	}
 	
 	@Step
 	public void SeleccionarCargaM() {
-		loginSisdeppPage.SeleccionarCargaM(); 
+		prepracticaPage.SeleccionarCargaM(); 
 	}
 	@Step
 	public void VeMensajeCarga(String MenCargMan) {
-		loginSisdeppPage.VeMensajeCarga(MenCargMan);		
+		prepracticaPage.VeMensajeCarga(MenCargMan);		
 	}
 	@Step
 	public void IngresarMenAgen() {
-		loginSisdeppPage.IngresarMenAgen();		
+		prepracticaPage.IngresarMenAgen();		
 	}
 
 	
 	@Step
 	public void IngresarMenAsesores() {
-		loginSisdeppPage.IngresarMenAsesores();
+		prepracticaPage.IngresarMenAsesores();
 	}
 	@Step
 	public void VemensajeAgenda(String MenAgenda) {
-		loginSisdeppPage.VemensajeAgenda(MenAgenda);
+		prepracticaPage.VemensajeAgenda(MenAgenda);
 	}
 	@Step
 	public void IngresarMenModAse() {
-		loginSisdeppPage.IngresarMenModAse();
+		prepracticaPage.IngresarMenModAse();
 		
 	}
 	@Step
 	public void VemensajeAsesores(String menAsesores) {
-		loginSisdeppPage.VemensajeAsesores(menAsesores);
+		prepracticaPage.VemensajeAsesores(menAsesores);
 		
 	}
 	@Step
 	public void VerificarMen(String menBien) {
-		loginSisdeppPage.VerificarMen(menBien) ;
+		prepracticaPage.VerificarMen(menBien) ;
 		
 	}
 	@Step
 	public void IngresarMenRegAs() {
-		loginSisdeppPage.IngresarMenRegAs();
+		prepracticaPage.IngresarMenRegAs();
 		
 	}
 	@Step
 	public void VemensajeRegAsesores(String MenRegAse) {
-		loginSisdeppPage.VemensajeRegAsesores(MenRegAse);
+		prepracticaPage.VemensajeRegAsesores(MenRegAse);
 	}
 
 
