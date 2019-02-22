@@ -31,10 +31,10 @@ public class practicaPage extends PageObject {
 	@FindBy (css= "img[alt='Administracion']")
     public WebElementFacade lbtitulo;
 	
-	@FindBy (css= "img[alt='Práctica']")
+	@FindBy (xpath= "//a[@href='/sisdepp/practica/index.do']")
     public WebElementFacade lblMenuPractica;
 	
-	@FindBy (linkText= "Actualización Datos Básicos")
+	@FindBy  (xpath= "//a[@href='/sisdepp/practica/mentores/mentor-select.do']")
 	public WebElementFacade linkActualizacionDatosBasicos;
 	
 	
@@ -45,19 +45,19 @@ public class practicaPage extends PageObject {
 	public WebElementFacade mensajeSubti;
 	
 	
-	@FindBy (linkText= "Reporte de Vinculación")
+	@FindBy  (xpath= "//a[@href='/sisdepp/prepractica/vinculacion/cargarPaginaVinculacionesReporte.do']")
 	public WebElementFacade linkReporteVinculacion;
 	
-	@FindBy (linkText= "Realizar Evaluación")
+	@FindBy  (xpath= "//a[@href='/sisdepp/realizarEvaluacion.do']")
 	public WebElementFacade linkRealizarEvaluacion;
 	
-	@FindBy (linkText= "Administración de Mentores")
+	@FindBy  (xpath= "//a[@href='/sisdepp/practica/mentores/cargarFormularioListaMentores.do']")
 	public WebElementFacade linkAdminMentores;
 	
 	@FindBy (linkText= "Crear grupo")
 	public WebElementFacade linkCrearGrupo;
 	
-	@FindBy (linkText= "Consultar Grupo")
+	@FindBy (xpath="//a[@href='/sisdepp/practica/grupos/cargarFormularioConsultaGrupos.do']")
 	public WebElementFacade linkConsutarGrupo;
 	
 	@FindBy (linkText= "Correspondencia")

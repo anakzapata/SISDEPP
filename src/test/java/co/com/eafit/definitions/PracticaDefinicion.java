@@ -20,31 +20,18 @@ public class PracticaDefinicion {
 		practicaSt.Abrirpagina();
 	}
 
-/*
-	@When("^el ingresa usuario \"([^\"]*)\" y clave \"([^\"]*)\"$")
-	public void elIngresaUsuarioYClave(String user, String pass) throws Exception {
-		practicaSt.IngresarCredenciales(user, pass);
+
 	
-	}
-	
-	
-	@When("^selecciona el rol Administrador$")
-	public void seleccionaElRolAdministrador() throws Exception {
-		
-		practicaSt.seleccionarRol();
-	  
-	} */
-	
-		@When("^el selecciona el menú Práctica$")
-		public void elSeleccionaElMenúPráctica() throws Exception {
+		@When("^el selecciona el menu Practica$")
+		public void elSeleccionaElMenuPractica() throws Exception {
 			practicaSt.seleccionarMenuPractica();
 		}
 		
 	
 		
 	
-		@When("^selecciona la opción Actualizacion Datos Basicos$")
-		public void seleccionaLaOpciónActualizacionDatosBasicos() throws Exception {
+		@When("^selecciona la opcion Actualizacion Datos Basicos$")
+		public void seleccionaLaOpcionActualizacionDatosBasicos() throws Exception {
 			practicaSt.clickActualizacionBasicos();
 		}
 		
@@ -146,6 +133,10 @@ public class PracticaDefinicion {
 			practicaSt.mostrarMensjeSubt(msjCorMento);
 		}
 		
+		@When("^selecciona la opcion consultar grupo$")
+		public void seleccionaLaOpcionConsultarGrupo() throws Exception {
+			practicaSt.clickConsultarGrupo();
+		}
 		
 		@When("^click la opcion Consultar Estudiantes$")
 		public void click_la_opcion_Consultar_Estudiantes() throws Exception {
